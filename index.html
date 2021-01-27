@@ -17,8 +17,49 @@
                 <label for="name">What's your name?</label>
                 <input id="name" class="form-control" type="text">
             </div>
+            <div class="form-group">
+                <label for="dob">What's your birthday?</label>
+                <input id="dob" class="form-control" type="date">
+            </div>
+            <div class="form-group">
+                <label for="fav-color">What's your favorite color?</label>
+                <input id="fav-color" class="form-control" type="color">
+            </div>
+            <div class="form-group">
+                <label for="music">What's your favorite kind of music?</label>
+                <select class="form-control" id="music">
+                    <option value="pop">Pop</option>
+                    <option value="country">Country</option>
+                    <option value="hip-hop">Hip hop</option>
+                    <option value="classical">Classical</option>
+                </select>
+            </div>
+            <div class="form group">
+                <label for="dog-cat">Are you a dog person or a cat person?</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="dog-cat" value="dog" checked>
+                        Dog person
+                    </label>
+                    <label>
+                        <input type="radio" name="dog-cat" value="cat">
+                        Cat person
+                    </label>
+                    <label>
+                        <input type="radio" name="dog-cat" value="both">
+                        I like both
+                    </label>
+                </div>
+            </div>
             <button type="submit" class="btn-success">Submit</button>
         </form>
+        <div id="output">
+            <p>Your name: <span id="userName"> </span></p>
+            <p>Your birthday: <span id="userDob"> </span></p>
+            <p>Your favorite color: <span id="userFavColor"> </span></p>
+            <p>Your favorite music: <span id="userFavMusic"> </span></p>
+            <p>Dog or cat person: <span id="userDogOrCat"> </span></p>
+        </div>
     </div> 
 </body>
 </html>
